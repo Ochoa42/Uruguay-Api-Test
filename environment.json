@@ -1,0 +1,66 @@
+{
+    "test" : {
+        "apiBaseUrl" : "https://apiuydev.elekta.app/api",
+        "accounts" : {
+            "sharedAccount" : {
+                "apiKey" : {
+                    "key" : "Authorization",
+                    "value" : "pk_82119352_XJ8F0DARGIACRHP252FXTAITV6MP3V4A"
+                },
+                "AdminPartido":[
+                    {
+                        "ci":"12345678",
+                        "password":"12345678"
+                    },
+                    {
+                        "ci":"12345678",
+                        "password":"12345678"
+                    },
+                    {
+                        "ci":"12345678",
+                        "password":"12345678"
+                    },
+                    {
+                        "ci":"12345678",
+                        "password":"12345678"
+                    }
+                ],
+                "AdminOrg":[
+                    {
+                        "ci":"12345678",
+                        "password":"12345678"
+                    },
+                    {
+                        "ci":"12345678",
+                        "password":"12345678"
+                    }
+                ],
+                "AdminDpto":[
+                    {
+                        "ci":"12345678",
+                        "password":"12345678"
+                    },
+                    {
+                        "ci":"98765432",
+                        "password":"12345678"
+                    },
+                    {
+                        "ci":"12345678",
+                        "password":"12345678"
+                    }
+                ],
+                "AdminMun":[
+                    {
+                        "ci":"12345678",
+                        "password":"12345678"
+                    },
+                    {
+                        "ci":"98765432",
+                        "password":"12345678"
+                    }
+                ]
+
+            }
+        }
+    }
+}

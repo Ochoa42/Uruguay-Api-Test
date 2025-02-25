@@ -1,0 +1,55 @@
+{
+  "name": "automatizationjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "jest":{
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "./tests/jest/*",
+      "./main/api/*"
+    ]
+  },
+  "scripts": {
+    "test": "jest",
+    "unit-test": "jest ./testsJest/requestManager.test.js",
+    "e2e": "npx cucumber-js --tags \"@tc022\" --fail-fast",
+    "coverage": "jest --coverage",
+    "report": "node html-reporter.js",
+    "dry-run": "cucumber-js --dry-run",
+    "lint": "npx eslint .",
+    "fix": "npx eslint . --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "axios": "^1.7.9",
+    "chai": "^5.2.0",
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^7.2.0",
+    "express": "^4.21.2",
+    "jest": "^29.7.0",
+    "jsonschema": "^1.5.0",
+    "newman": "^6.2.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@eslint/js": "^8.57.1",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.57.1",
+    "globals": "^16.0.0"
+  }
+}
