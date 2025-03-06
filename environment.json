@@ -5,7 +5,7 @@
             "sharedAccount" : {
                 "apiKey" : {
                     "key" : "Authorization",
-                    "value" : "pk_82119352_XJ8F0DARGIACRHP252FXTAITV6MP3V4A"
+                    "value" : "Bearer 1175|k1H3Zr2Pl2PejEbS7J9XvvphW30s3BMV6nx5MPNIa3d7ddbc"
                 },
                 "AdminPartido":[
                     {

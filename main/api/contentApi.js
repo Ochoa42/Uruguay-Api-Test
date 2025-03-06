@@ -1,6 +1,5 @@
-import { createApiClass } from "../../core/requestManager.js";
-import endpoints from "../endpoints";
+import endpoints from "../endpoints.js";
+import { createApiClass } from "./createEntitiAPI";
 
 
-const contentApi = createApiClass (endpoints.features.contents);
-export default contentApi;
+export const contentApi = createApiClass(endpoints.features.contents);
