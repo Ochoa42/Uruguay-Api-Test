@@ -30,13 +30,10 @@ const endpoints = {
         eventDET: "/events?searchBy=1&fullType=DET",
       },
     },
-    segmentation: {
+    activitys: {
       urls: {
-        post: "list/{listId}/task",
-        getOne: "task/{taskId}",
-        getAll: "task/{taskId}",
-        put: "task/{taskId}",
-        delete: "task/{taskId}",
+        activitysCreate: "/activities",
+        activitiesL: "/activities?fullType=L",
       },
     },
   },

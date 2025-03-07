@@ -28,10 +28,10 @@ export function createApiClass(endpointGroup) {
 
             // Si no se pasa un token, usamos el predeterminado de RequestManager
             const authToken = authorization || this.#reqManager.getDefaultAuthorization();
-            console.log("mi endpoint:",endpointGroup.urls[endpointKey])
+            //console.log("mi endpoint:",endpointGroup.urls[endpointKey])
             const req = this.#createRequest(method, endpointGroup.urls[endpointKey], pathParams, body, authToken);
-            console.log("tokenAuth",authToken)
-            console.log("mi req",req)
+            //console.log("tokenAuth",authToken)
+            //console.log("mi req",req)
             return this.#sendRequest(req);
         }
 
