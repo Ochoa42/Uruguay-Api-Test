@@ -36,6 +36,12 @@ const endpoints = {
         activitiesL: "/activities?fullType=L",
       },
     },
+    affiliate : {
+      urls: {
+        affiliatePreregisterRed:"/pre-register",
+        affiliatesLogin:"/aff-login"
+      }
+    }
   },
 };
 
