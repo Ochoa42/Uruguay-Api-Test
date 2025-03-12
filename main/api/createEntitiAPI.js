@@ -26,8 +26,11 @@ export function createApiClass(endpointGroup) {
                 throw new Error(`Endpoint '${endpointKey}' not defined`);
             }
 
+            let authToken = null
             // Si no se pasa un token, usamos el predeterminado de RequestManager
-            const authToken = authorization || this.#reqManager.getDefaultAuthorization();
+            if(endpointKey != "affiliatesLogin" ){
+                authToken = authorization || this.#reqManager.getDefaultAuthorization();
+            }
             //console.log("mi endpoint:",endpointGroup.urls[endpointKey])
             const req = this.#createRequest(method, endpointGroup.urls[endpointKey], pathParams, body, authToken);
             //console.log("tokenAuth",authToken)
@@ -57,7 +60,7 @@ export function createApiClass(endpointGroup) {
                 method,
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: authorization,
+                    ...(authorization ? { Authorization: authorization } : {})
                 },
                 ...(body ? { data: body } : {})
             };

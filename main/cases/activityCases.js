@@ -1,7 +1,6 @@
 import { imagenes } from "../../core/utils/img/formatWebp";
 
 const today = new Date();
-
 const beginAt = new Date();
 beginAt.setDate(today.getDate() + 2);
 
@@ -12,7 +11,6 @@ const dateLimit = new Date(beginAt);
 dateLimit.setDate(today.getDate() + 1);
 
 const formatDate = (date) => date.toISOString().slice(0, 19).replace('T', ' ');
-
 
 export const activityAllOrg = {
     "lDestiny": [4,5,11,6,2,35,3,8,1],
@@ -52,8 +50,4 @@ export const activityAllDestiny = {
         "ext": "webp",
         "file": imagenes.MODELO1
     }
-}
-
-export const activityDestinyOrg = {
-
 }

@@ -39,7 +39,8 @@ const endpoints = {
     affiliate : {
       urls: {
         affiliatePreregisterRed:"/pre-register",
-        affiliatesLogin:"/aff-login"
+        affiliatesLogin:"/aff-login",
+        affiliateVerify:"/affiliates/{userId}"
       }
     }
   },

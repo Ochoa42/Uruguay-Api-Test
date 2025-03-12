@@ -1,11 +1,11 @@
 // import { activitesApi } from "../main/api/activitesApi";
 // import { activityAllDestiny, activityAllOrg } from "../main/cases/activityCases";
+// import { data } from "../core/utils/EntityData";
+// import endpoints from "../main/endpoints";
 
-
+// let idActivity;
+// const afil = "Bearer 1221|C6HqeFwcGvFZHPstmHFOcR4xh0LyGBNhtJkiST1jb39e2b90"
 // describe("Activity API Integration Tests", () => {
-
-//     let idActivity;
-//     const afil = "Bearer 1221|C6HqeFwcGvFZHPstmHFOcR4xh0LyGBNhtJkiST1jb39e2b90"
 
 //     test("Verificar la creacion de la actividad para todas las organizaciones.", async () => {
 //         const response = await activitesApi.create("activitysCreate", {}, activityAllOrg);

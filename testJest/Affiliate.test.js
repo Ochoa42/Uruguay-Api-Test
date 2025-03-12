@@ -1,52 +1,44 @@
 import { convertToFormData } from "../core/utils/convertFormDate";
 import { affiliatesApi } from "../main/api/affiliateApi";
-import { afffiliatePreRegister } from "../main/cases/afffiliateCases";
+import { afffiliatePreRegister, verifyAffiliate } from "../main/cases/afffiliateCases";
 import configuration from "../configuration.json"
 import environment from "../environment.json"
+import { entities } from "../core/utils/img/entities";
+import { data } from "../core/utils/EntityData";
 
-const affiliateLogin = environment[configuration.environment].accounts.sharedAccount.Affiliates;
-let affiliateId;
-let verifyAffiliate;
-let affiliateData
-const bodyConvert = convertToFormData(affiliateLogin[0])
+const affiliates = environment[configuration.environment].accounts.sharedAccount.Affiliates;
+let userSession = 1
+let nextAffiliateRed = 1
+let userId;
+const bodyConvert = convertToFormData(affiliates[userSession])
+let token
 
 describe("Affiliate API login test", () => {
-
     test("affiliate login ", async () => {
-        console.log("mi body conver",bodyConvert)
         const response = await affiliatesApi.create("affiliatesLogin",{},bodyConvert);
-        affiliateData = response.data.data
-        affiliateId = response.data.data.user.id
-
+        console.log("mi response", response)
+        expect(response).not.toBeNull();
+        expect(response.status).toBe(200);
+        expect(response.data).toHaveProperty("success", true);
+        userId = response.data.data.user.id
+        token =`Bearer ${response.data.data.token}`
     })
 
     test("affiliate account verify" , async () => {
-        verifyAffiliate = {
-            "is_verify": "A",
-            "name": affiliateData.user.name,
-            "middle_name": null,
-            "last_name": affiliateData.user.last_name,
-            "mother_last_name": affiliateData.user.mother_last_name,
-            "address": affiliateData.user.address,
-            "phone": affiliateData.user,phone,
-            "prefix_phone": affiliateData.user.prefix_phone,
-            "birthday": affiliateData.user.birthday,
-            "gender": "M",
-            "education_id": 1,
-            "credential": "JKL345",
-            "email": `${affiliateData.user.name}@gmail.com`,
-            "lista_id": 1,
-            "dpto_id": 1,
-            "mun_id": 1,
-            "barrio_id": null,
-            "barrio":null
-        }
-        const response = await affiliatesApi.create("affiliatesVerify",{},verifyAffiliate);
+        const responseData = verifyAffiliate(1)
+        const response = await affiliatesApi.update("affiliateVerify",{userId:userId},responseData,token);
+        expect(response).not.toBeNull();
+        expect(response.status).toBe(200);
+        expect(response.data).toHaveProperty("success", true);
     })
 
-    // test('should first', async () => { 
-    //     const response = await affiliatesApi.create("affiliatePreregisterRed",{},)
-    //     expect(response).not.toBeNull();
-    //     expect(response.status).toBe(200);
-    // })
+    test("Patrocinador realiza el preregistro desde la red", async () => { 
+        const responseData = afffiliatePreRegister(userId,"500017",2,2,2,2,1)
+        console.log("datos randoms:",responseData)
+        const response = await affiliatesApi.create("affiliatePreregisterRed",{},responseData,token)
+        expect(response).not.toBeNull();
+        expect(response.status).toBe(200);
+        expect(response.data).toHaveProperty("success", true);
+        expect(response.data).not.toHaveProperty("name","Ya existe un registro de esta persona en este Partido")
+    })
 })

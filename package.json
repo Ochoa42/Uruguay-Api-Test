@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "jest":{
+  "jest": {
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     },
@@ -34,6 +34,7 @@
   "dependencies": {
     "@cucumber/cucumber": "^11.2.0",
     "@cucumber/pretty-formatter": "^1.0.1",
+    "@faker-js/faker": "^9.6.0",
     "axios": "^1.7.9",
     "chai": "^5.2.0",
     "cucumber": "^6.0.7",

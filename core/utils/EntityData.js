@@ -1,4 +1,4 @@
-{
+export const data = {
     "success": true,
     "data": {
       "listas": [
