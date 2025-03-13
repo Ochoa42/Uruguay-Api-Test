@@ -1,5 +1,5 @@
 import { imagenes } from "../../core/utils/img/formatWebp";
-
+import { fakerData } from "../../core/utils/dependencies";
 const today = new Date();
 const beginAt = new Date();
 beginAt.setDate(today.getDate() + 2);

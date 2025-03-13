@@ -20,6 +20,11 @@
   },
   "scripts": {
     "test": "jest",
+    "test:events": "jest ./testJest/events.test.js",
+    "test:Affiliate": "jest ./testJest/Affiliate.test.js",
+    "test:content": "jest ./testJest/content.test.js",
+    "test:activity": "jest ./testJest/activity.test.js",
+    "test:survey": "jest ./testJest/events.test.js",
     "unit-test": "jest ./testsJest/requestManager.test.js",
     "e2e": "npx cucumber-js --tags \"@tc022\" --fail-fast",
     "coverage": "jest --coverage",

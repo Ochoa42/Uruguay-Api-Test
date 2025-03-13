@@ -63,16 +63,34 @@
                     {
                         "email":"707001",
                         "password":"7001",
+                        "segmentacion":{
+                            "org":"sto",
+                            "dpto":"artigas",
+                            "mun":"baltasar brum",
+                            "barr":null
+                        },
                         "token":"1279|6IJFsvTb8YPON2zo6p9vB3mYiPqNFZoUqlMH1etQf773591f"
                     },
                     {
-                        "email":"500015",
-                        "password":"0015",
+                        "email":"707002",
+                        "password":"7002",
+                        "segmentacion":{
+                            "org":"sto",
+                            "dpto":"artigas",
+                            "mun":"bella union",
+                            "barr":null
+                        },
                         "token":""
                     },
                     {
                         "email":"707003",
                         "password":"7003",
+                        "segmentacion":{
+                            "org":"sto",
+                            "dpto":"artigas",
+                            "mun":"tomas gomensoro",
+                            "barr":null
+                        },
                         "token":""
                     },
                     {
@@ -107,22 +125,172 @@
                     },
                     {
                         "email":"707010",
-                        "password":"7009",
+                        "password":"7010",
                         "token":""
                     },
                     {
                         "email":"707011",
-                        "password":"7009",
+                        "password":"7011",
                         "token":""
                     },
                     {
                         "email":"707012",
-                        "password":"7009",
+                        "password":"7012",
                         "token":""
                     },
                     {
                         "email":"707013",
-                        "password":"7009",
+                        "password":"7013",
+                        "token":""
+                    },
+                    {
+                        "email":"707014",
+                        "password":"7014",
+                        "token":""
+                    },
+                    {
+                        "email":"707015",
+                        "password":"7015",
+                        "token":""
+                    },
+                    {
+                        "email":"707016",
+                        "password":"7016",
+                        "token":""
+                    },
+                    {
+                        "email":"707017",
+                        "password":"7017",
+                        "token":""
+                    },
+                    {
+                        "email":"707018",
+                        "password":"7018",
+                        "token":""
+                    },
+                    {
+                        "email":"707019",
+                        "password":"7019",
+                        "token":""
+                    },
+                    {
+                        "email":"707020",
+                        "password":"7020",
+                        "token":""
+                    },
+                    {
+                        "email":"707021",
+                        "password":"7021",
+                        "token":""
+                    },
+                    {
+                        "email":"707022",
+                        "password":"7022",
+                        "token":""
+                    },
+                    {
+                        "email":"707023",
+                        "password":"7023",
+                        "token":""
+                    },
+                    {
+                        "email":"707024",
+                        "password":"7024",
+                        "token":""
+                    },
+                    {
+                        "email":"707025",
+                        "password":"7025",
+                        "token":""
+                    },
+                    {
+                        "email":"707026",
+                        "password":"7026",
+                        "token":""
+                    },
+                    {
+                        "email":"707027",
+                        "password":"7028",
+                        "token":""
+                    },
+                    {
+                        "email":"707028",
+                        "password":"7028",
+                        "token":""
+                    },
+                    {
+                        "email":"707029",
+                        "password":"7029",
+                        "token":""
+                    },
+                    {
+                        "email":"707030",
+                        "password":"7030",
+                        "token":""
+                    },
+                    {
+                        "email":"707031",
+                        "password":"7031",
+                        "token":""
+                    },
+                    {
+                        "email":"707032",
+                        "password":"7032",
+                        "token":""
+                    },
+                    {
+                        "email":"707033",
+                        "password":"7033",
+                        "token":""
+                    },
+                    {
+                        "email":"707034",
+                        "password":"7034",
+                        "token":""
+                    },
+                    {
+                        "email":"7070335",
+                        "password":"7035",
+                        "token":""
+                    },
+                    {
+                        "email":"707036",
+                        "password":"7036",
+                        "token":""
+                    },
+                    {
+                        "email":"707037",
+                        "password":"7037",
+                        "token":""
+                    },
+                    {
+                        "email":"707038",
+                        "password":"7038",
+                        "token":""
+                    },
+                    {
+                        "email":"707039",
+                        "password":"7039",
+                        "token":""
+                    },
+                    {
+                        "email":"707040",
+                        "password":"7040",
+                        "token":""
+                    },
+                    {
+                        "email":"707041",
+                        "password":"7041",
+                        "token":""
+                    },
+                    {
+                        "email":"707042",
+                        "password":"7042",
+                        "token":""
+                    },
+                    {
+                        "email":"707043",
+                        "password":"7043",
                         "token":""
                     }
                 ]

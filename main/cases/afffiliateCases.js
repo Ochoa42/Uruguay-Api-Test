@@ -1,37 +1,41 @@
-import { faker } from '@faker-js/faker';
-const fakerPerson = faker
 import configuration from "../../configuration.json"
+import { fakerData} from "../../core/utils/dependencies";
 import environment from "../../environment.json"
+import { generarId } from "../../core/utils/dependencies";
 
-export const afffiliatePreRegister =(sponsorId,nextUser,list,dpto,mun,bar,position) => {
+export const afffiliatePreRegister = (sponsorId, position, list = 1, dpto = 1, mun = 1, bar = null, nextUser = null) => {
+    const generateAffiliateData = (ciValue) => ({
+        name: fakerData.person.firstName(),
+        middle_name: fakerData.person.middleName(),
+        last_name: fakerData.person.lastName(),
+        mother_last_name: fakerData.person.lastName(),
+        ci: ciValue,
+        sponsor_id: sponsorId,
+        prefix_phone: "591",
+        phone: fakerData.phone.number('7#######'),
+        lista_id: list,
+        dpto_id: dpto,
+        mun_id: mun,
+        barrio_id: bar,
+        position,
+    });
+
+    if (nextUser === null) {
+        return generateAffiliateData(generarId());
+    }
+
     const affiliates = environment[configuration.environment].accounts.sharedAccount.Affiliates;
-    const data = {
-        "name":fakerPerson.person.firstName(),
-        "middle_name": fakerPerson.person.middleName(),
-        "last_name": fakerPerson.person.lastName(),
-        "mother_last_name":fakerPerson.person.lastName(),
-        "ci": nextUser,//affiliates[nexUser].email,
-        "sponsor_id": sponsorId,
-        "prefix_phone": "591",
-        "phone": "78175728",
-        "gender": fakerPerson.person.gender(),
-        "lista_id": list,
-        "dpto_id": dpto,
-        "mun_id": mun,
-        "barrio_id": bar,
-        "position":position,
-        
-    } 
-    return data
-}
+    return generateAffiliateData(affiliates[nextUser].email);
+};
 
 export const verifyAffiliate=(education_id) => {
-    dataUpdate = {
+    const dataUpdate = {
     "is_verify": "A",
     "birthday": "1988-09-10",
-    "email": fakerPerson.internet.exampleEmail(),
-    "address":fakerPerson.location.direction(),
+    "email": fakerData.internet.exampleEmail(),
+    "address":fakerData.location.direction(),
     "education_id": education_id,
+    "gender": "M",
     }
     return dataUpdate
 }
