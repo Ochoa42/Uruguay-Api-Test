@@ -69,7 +69,7 @@
                             "mun":"baltasar brum",
                             "barr":null
                         },
-                        "token":"1279|6IJFsvTb8YPON2zo6p9vB3mYiPqNFZoUqlMH1etQf773591f"
+                        "token":"Bearer 1279|6IJFsvTb8YPON2zo6p9vB3mYiPqNFZoUqlMH1etQf773591f"
                     },
                     {
                         "email":"707002",
@@ -80,7 +80,7 @@
                             "mun":"bella union",
                             "barr":null
                         },
-                        "token":""
+                        "token":"Bearer 1499|bZeIEouByrqzsrJk2zKrpLhnd6dVFxTDJuC9n4bO2f488d22"
                     },
                     {
                         "email":"707003",
@@ -91,210 +91,261 @@
                             "mun":"tomas gomensoro",
                             "barr":null
                         },
-                        "token":""
+                        "token":"Bearer 1500|H9SdtOqXlHQ01u3KXzgZngINvgkHEhHARuWpXR42ca5109d9"
                     },
                     {
                         "email":"707004",
                         "password":"7004",
-                        "token":""
+                        "token":"Bearer 1501|WWWGJQofJbQauWpCouKbSEcbHNB08N8C50geqtVP258abbf9"
                     },
                     {
                         "email":"707005",
                         "password":"7005",
-                        "token":""
+                        "token":"Bearer 1502|qxgJbAUN4uHmglwXxHcqeSK5E0h9BrBNaLfAYzV22a8e5467"
                     },
                     {
                         "email":"707006",
                         "password":"7006",
-                        "token":""
+                        "token":"Bearer 1503|6eIV87DHZldfwINtoahBd7yz9IuEqs4CqmAxxN4Hbd2fc129"
                     },
                     {
                         "email":"707007",
                         "password":"7007",
-                        "token":""
+                        "token":"Bearer 1504|otEYJ8MAsPml20EOCq0ar4vbKIvehZrZaIZWkVhje7eda5e3"
                     },
                     {
                         "email":"707008",
                         "password":"7008",
-                        "token":""
+                        "token":"Bearer 1506|8PYhTryI77nMS98pZ9w6IlEwno1h2v72AJTCGbEVf2e1f2a7"
                     },
                     {
                         "email":"707009",
                         "password":"7009",
-                        "token":""
+                        "token":"Bearer 1507|5F9xSBagKnOnSiyA93Yv0EdQJgk5vrOTTQf3GUGN60dbb45d"
                     },
                     {
                         "email":"707010",
                         "password":"7010",
-                        "token":""
+                        "token":"Bearer 1508|0ktFPmmEQmLB7Q08l2zybfvu2HBGF1l9Vnlz1Nk5073f7e7d"
                     },
                     {
                         "email":"707011",
                         "password":"7011",
-                        "token":""
+                        "token":"Bearer 1509|mwGDI7wgo5PwMlZQig6cuCSsr0ztoPsbM2GmN0dDc697e459"
                     },
                     {
                         "email":"707012",
                         "password":"7012",
-                        "token":""
+                        "token":"Bearer 1510|9SMUqENZvW1c1zL1RDwc5PGk2L1g7vh5uL4a4u130dbed75c"
                     },
                     {
                         "email":"707013",
                         "password":"7013",
-                        "token":""
+                        "token":"Bearer 1511|j0ZO3zW7lAUGweWaG2oBHKyW7pInMPXu2JClOcht094f0689"
                     },
                     {
                         "email":"707014",
                         "password":"7014",
-                        "token":""
+                        "token":"Bearer 1512|wELENb6OMb0EMEF6YJbnn6pPcp37Ew0R03cic9DSd5485a7d"
                     },
                     {
                         "email":"707015",
                         "password":"7015",
-                        "token":""
+                        "token":"Bearer 1513|JMMm4UaZmEuvsJGg4qxcb3nmkbzvs2SoImyPgUSE72eb544c"
                     },
                     {
                         "email":"707016",
                         "password":"7016",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707017",
                         "password":"7017",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707018",
                         "password":"7018",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707019",
                         "password":"7019",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707020",
                         "password":"7020",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707021",
                         "password":"7021",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707022",
                         "password":"7022",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707023",
                         "password":"7023",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707024",
                         "password":"7024",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707025",
                         "password":"7025",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707026",
                         "password":"7026",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707027",
                         "password":"7028",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707028",
                         "password":"7028",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707029",
                         "password":"7029",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707030",
                         "password":"7030",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707031",
                         "password":"7031",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707032",
                         "password":"7032",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707033",
                         "password":"7033",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707034",
                         "password":"7034",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"7070335",
                         "password":"7035",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707036",
                         "password":"7036",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707037",
                         "password":"7037",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707038",
                         "password":"7038",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707039",
                         "password":"7039",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707040",
                         "password":"7040",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707041",
                         "password":"7041",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707042",
                         "password":"7042",
-                        "token":""
+                        "token":"Bearer "
                     },
                     {
                         "email":"707043",
                         "password":"7043",
-                        "token":""
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"717100",
+                        "password":"7100",
+                        "token":"Bearer "
                     }
-                ]
-
+                ],
+                "AffiliatesOrg":[
+                    {
+                        "email":"717101",
+                        "password":"7101",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"717102",
+                        "password":"7102",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"717103",
+                        "password":"7103",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"717104",
+                        "password":"7104",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"717105",
+                        "password":"7105",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"717106",
+                        "password":"7106",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"717107",
+                        "password":"7107",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"717108",
+                        "password":"7108",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"717109",
+                        "password":"7109",
+                        "token":"Bearer "
+                    }
+                    ]
             }
         }
     }

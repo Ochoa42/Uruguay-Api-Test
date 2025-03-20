@@ -42,6 +42,11 @@ const endpoints = {
         affiliatesLogin:"/aff-login",
         affiliateVerify:"/affiliates/{userId}"
       }
+    },
+    task : {
+      urls: {
+        taskCreate: "/tasks",
+      }
     }
   },
 };

@@ -3,7 +3,7 @@ import { fakerData} from "../../core/utils/dependencies";
 import environment from "../../environment.json"
 import { generarId } from "../../core/utils/dependencies";
 
-export const afffiliatePreRegister = (sponsorId, position, list = 1, dpto = 1, mun = 1, bar = null, nextUser = null) => {
+export const afffiliatePreRegister = (sponsorId, position, list = 1, dpto = 1, mun = 1,nextUser = null, bar = null) => {
     const generateAffiliateData = (ciValue) => ({
         name: fakerData.person.firstName(),
         middle_name: fakerData.person.middleName(),
@@ -33,7 +33,7 @@ export const verifyAffiliate=(education_id) => {
     "is_verify": "A",
     "birthday": "1988-09-10",
     "email": fakerData.internet.exampleEmail(),
-    "address":fakerData.location.direction(),
+    "address":fakerData.location.streetAddress({useFullAddress: true}),
     "education_id": education_id,
     "gender": "M",
     }

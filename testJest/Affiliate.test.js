@@ -7,8 +7,8 @@ import { entities } from "../core/utils/img/entities";
 import { data } from "../core/utils/EntityData";
 
 const affiliates = environment[configuration.environment].accounts.sharedAccount.Affiliates;
-let userSession = 22
-let nextAffiliateRed = 23
+let userSession = 52
+let nextAffiliateRed = 52
 let userId;
 const bodyConvert = convertToFormData(affiliates[userSession])
 let token
@@ -20,7 +20,7 @@ describe("Affiliate API login test", () => {
             "password":"3051"
         }
         otherUserSession = convertToFormData(otherUserSession)
-        const response = await affiliatesApi.create("affiliatesLogin",{},otherUserSession);
+        const response = await affiliatesApi.create("affiliatesLogin",{},bodyConvert);
         console.log("mi response", response)
         expect(response).not.toBeNull();
         expect(response.status).toBe(200);
@@ -38,9 +38,11 @@ describe("Affiliate API login test", () => {
     })
 
     test("Patrocinador realiza el preregistro desde la red", async () => { 
-        const responseData = afffiliatePreRegister(userId,0)
-        console.log("datos randoms:",responseData)
-        const response = await affiliatesApi.create("affiliatePreregisterRed",{},responseData,token)
+        //const responseData = afffiliatePreRegister(userId,0)
+        const org = [4,5,11,6,2,35,3,8,1]
+        const responseDataParams = afffiliatePreRegister(userId,0,35,1,1,nextAffiliateRed)
+        // console.log("datos randoms:",responseData)
+        const response = await affiliatesApi.create("affiliatePreregisterRed",{},responseDataParams,token)
         expect(response).not.toBeNull();
         expect(response.status).toBe(200);
         expect(response.data).toHaveProperty("success", true);
