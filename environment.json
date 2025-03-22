@@ -210,7 +210,7 @@
                     },
                     {
                         "email":"707027",
-                        "password":"7028",
+                        "password":"7027",
                         "token":"Bearer "
                     },
                     {
@@ -249,7 +249,7 @@
                         "token":"Bearer "
                     },
                     {
-                        "email":"7070335",
+                        "email":"707035",
                         "password":"7035",
                         "token":"Bearer "
                     },
@@ -294,8 +294,58 @@
                         "token":"Bearer "
                     },
                     {
-                        "email":"717100",
-                        "password":"7100",
+                        "email":"707044",
+                        "password":"7044",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"707045",
+                        "password":"7045",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"707046",
+                        "password":"7046",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"707047",
+                        "password":"7047",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"707048",
+                        "password":"7048",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"707049",
+                        "password":"7049",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"707050",
+                        "password":"7050",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"707051",
+                        "password":"7051",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"707052",
+                        "password":"7052",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"707053",
+                        "password":"7053",
+                        "token":"Bearer "
+                    },
+                    {
+                        "email":"707054",
+                        "password":"7054",
                         "token":"Bearer "
                     }
                 ],
@@ -303,47 +353,101 @@
                     {
                         "email":"717101",
                         "password":"7101",
-                        "token":"Bearer "
+                        "token":"Bearer ",
+                        "segmentacion":{
+                            "org":"STO",
+                            "dpto":"artigas",
+                            "mun":"Baltasar Brum",
+                            "barr":null
+                        }
                     },
                     {
                         "email":"717102",
                         "password":"7102",
-                        "token":"Bearer "
+                        "token":"Bearer ",
+                        "segmentacion":{
+                            "org":"LRN",
+                            "dpto":"artigas",
+                            "mun":"Baltasar Brum",
+                            "barr":null
+                        }
                     },
                     {
                         "email":"717103",
                         "password":"7103",
-                        "token":"Bearer "
+                        "token":"Bearer ",
+                        "segmentacion":{
+                            "org":"PDP",
+                            "dpto":"artigas",
+                            "mun":"Baltasar Brum",
+                            "barr":null
+                        }
                     },
                     {
                         "email":"717104",
                         "password":"7104",
-                        "token":"Bearer "
+                        "token":"Bearer ",
+                        "segmentacion":{
+                            "org":"AIEA",
+                            "dpto":"artigas",
+                            "mun":"Baltasar Brum",
+                            "barr":null
+                        }
                     },
                     {
                         "email":"717105",
                         "password":"7105",
-                        "token":"Bearer "
+                        "token":"Bearer ",
+                        "segmentacion":{
+                            "org":"CNC",
+                            "dpto":"artigas",
+                            "mun":"Baltasar Brum",
+                            "barr":null
+                        }
                     },
                     {
                         "email":"717106",
                         "password":"7106",
-                        "token":"Bearer "
+                        "token":"Bearer ",
+                        "segmentacion":{
+                            "org":"DDR",
+                            "dpto":"artigas",
+                            "mun":"Baltasar Brum",
+                            "barr":null
+                        }
                     },
                     {
                         "email":"717107",
                         "password":"7107",
-                        "token":"Bearer "
+                        "token":"Bearer ",
+                        "segmentacion":{
+                            "org":"SMR",
+                            "dpto":"artigas",
+                            "mun":"Baltasar Brum",
+                            "barr":null
+                        }
                     },
                     {
                         "email":"717108",
                         "password":"7108",
-                        "token":"Bearer "
+                        "token":"Bearer ",
+                        "segmentacion":{
+                            "org":"CNJ",
+                            "dpto":"artigas",
+                            "mun":"Baltasar Brum",
+                            "barr":null
+                        }
                     },
                     {
                         "email":"717109",
                         "password":"7109",
-                        "token":"Bearer "
+                        "token":"Bearer ",
+                        "segmentacion":{
+                            "org":"ODP",
+                            "dpto":"artigas",
+                            "mun":"Baltasar Brum",
+                            "barr":null
+                        }
                     }
                     ]
             }

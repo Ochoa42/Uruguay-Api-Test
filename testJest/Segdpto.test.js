@@ -3,18 +3,19 @@ import { createActivity } from "../main/cases/activityCases";
 import { affiliatesApi } from "../main/api/affiliateApi";
 import configuration from "../configuration.json"
 import environment from "../environment.json"
-import { convertToFormData } from "../core/utils/convertFormDate";
+import { convertToFormData, getElementsAtCustomIndices } from "../core/utils/convertFormDate";
 
 let idActivity;
 let activitiName;
 let description;
-const timeError=30000
+const timeError = 30000
+const affiliates = getElementsAtCustomIndices (environment[configuration.environment].accounts.sharedAccount.Affiliates)
 describe("Activity API Integration Tests", () => {
 
-    test("Verificar la creacion de la actividad para todas las organizaciones.", async () => {
-        const org = [1,2,3,4,5,6,8,11,35]
-        description = "Actividad para todas las organizaciones"
-        const response = await activitesApi.create("activitysCreate", {}, createActivity(org,2,"T","P",description));
+    test("Verificar la creacion de la actividad para todos los departamentos.", async () => {
+        const dpto = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+        description = "Actividad para todos los departamentos"
+        const response = await activitesApi.create("activitysCreate", {}, createActivity(dpto,3,"T","P",description));
         idActivity = response.data.data.id;
         activitiName = response.data.data.name;
         expect(response).not.toBeNull();
@@ -22,9 +23,7 @@ describe("Activity API Integration Tests", () => {
         expect(response.data).toHaveProperty("success", true);
     },timeError);
 
-    test("Verificar la segmentación para todos los afiliados de las organizaciones.", async () => {
-        const affiliates = environment[configuration.environment].accounts.sharedAccount.AffiliatesOrg;
-    
+    test("Verificar la segmentación para todos los afiliados de los departamentos.", async () => {
         const promises = affiliates.map(async (affiliate) => {
             const affiliateData = convertToFormData(affiliate);
     
@@ -50,24 +49,22 @@ describe("Activity API Integration Tests", () => {
     
             console.log(`✅ Afiliado ${userCi} recibió la actividad ${activitiName} correctamente.`);
         });
+    
         await Promise.all(promises);
-    },timeError);
+    }, timeError);
 
-
-    test("Verificar la creacion de la actividad para las organizaciones STO,LRN,PDP.", async () => {
-        const org = [1,2,3]
-        description = "Actividad para las organizaciones STO,LRN,PDP"
-        const response = await activitesApi.create("activitysCreate", {}, createActivity(org,2,"T","P",description));
+    test("Verificar la creacion de la actividad para los departamentos Artigas, Canelones, Cerro Largo, Colonia.", async () => {
+        const dpto = [1,2,3,4]
+        description = "Actividad para los departamentos Artigas, Canelones, Cerro Largo, Colonia"
+        const response = await activitesApi.create("activitysCreate", {}, createActivity(dpto,3,"T","P",description));
         idActivity = response.data.data.id;
-        activitiName=response.data.data.name;
+        activitiName = response.data.data.name;
         expect(response).not.toBeNull();
         expect(response.status).toBe(200);
         expect(response.data).toHaveProperty("success", true);
-    },timeError);
+    });
 
-    test("Verificar la segmentación para los afiliados de las organizaciones STO, LRN, PDP.", async () => {
-        const affiliates = environment[configuration.environment].accounts.sharedAccount.AffiliatesOrg;
-    
+    test("Verificar la segmentación para los afiliados de los departamentos Artigas, Canelones, Cerro Largo, Colonia.", async () => {
         const promises = affiliates.map(async (affiliate, index) => {
             const affiliateData = convertToFormData(affiliate);
     
@@ -90,7 +87,7 @@ describe("Activity API Integration Tests", () => {
     
             const activityExists = activities.some(activity => activity.id === idActivity);
     
-            if (index < 3) {
+            if ( index < 4) {
                 expect(activityExists).toBe(true);
                 console.log(`✅ Afiliado ${userCi} (Permitido) recibió la actividad ${activitiName} correctamente.`);
             } else {
@@ -101,20 +98,18 @@ describe("Activity API Integration Tests", () => {
         await Promise.all(promises);
     },timeError);
 
-    test("Verificar la creacion de la actividad para las organizaciones AIEA,CNC,DDR,SMR.", async () => {
-        const org = [4,5,6,8]
-        description = "Actividad para todas las organizaciones las organizaciones AIEA,CNC,DDR,SMR"
-        const response = await activitesApi.create("activitysCreate", {}, createActivity(org,2,"T","P",description));
+    test("Verificar la creacion de la actividad para los departamentos Durazno, Flores, Florida, Lavalleja", async () => {
+        const dpto = [5,6,7,8]
+        description = "Actividad para los departamentos Artigas, Canelones, Cerro Largo, Colonia"
+        const response = await activitesApi.create("activitysCreate", {}, createActivity(dpto,3,"T","P",description));
         idActivity = response.data.data.id;
-        activitiName=response.data.data.name;
+        activitiName = response.data.data.name;
         expect(response).not.toBeNull();
         expect(response.status).toBe(200);
         expect(response.data).toHaveProperty("success", true);
     },timeError);
-    
-    test("Verificar la segmentación para los afiliados de las organizaciones AIEA,CNC,DDR,SMR.", async () => {
-        const affiliates = environment[configuration.environment].accounts.sharedAccount.AffiliatesOrg;
-    
+
+    test("Verificar la segmentación para los afiliados de los departamentos Durazno, Flores, Florida, Lavalleja", async () => {
         const promises = affiliates.map(async (affiliate, index) => {
             const affiliateData = convertToFormData(affiliate);
     
@@ -137,7 +132,7 @@ describe("Activity API Integration Tests", () => {
     
             const activityExists = activities.some(activity => activity.id === idActivity);
     
-            if (index > 2 && index < 7) {
+            if (index > 3 && index < 8) {
                 expect(activityExists).toBe(true);
                 console.log(`✅ Afiliado ${userCi} (Permitido) recibió la actividad ${activitiName} correctamente.`);
             } else {

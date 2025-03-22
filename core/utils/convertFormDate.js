@@ -7,3 +7,8 @@ export const convertToFormData = (body) => {
 
     return formData;
 };
+
+
+export const getElementsAtCustomIndices=(arr)=>{
+    return arr.filter((_, index) => (index - 2) % 3 === 0 && index >= 2);
+}
