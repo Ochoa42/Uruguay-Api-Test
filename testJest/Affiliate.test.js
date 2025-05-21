@@ -14,8 +14,8 @@ let token
 describe("Affiliate API login test", () => {
     test("affiliate login ", async () => {
         let otherUserSession = {
-            "email":"303051",
-            "password":"3051"
+            "email":"303057",
+            "password":"3057"
         }
         otherUserSession = convertToFormData(otherUserSession)
         const response = await affiliatesApi.create("affiliatesLogin",{},otherUserSession);
@@ -38,6 +38,7 @@ describe("Affiliate API login test", () => {
     test("Patrocinador realiza el preregistro desde la red", async () => { 
         //const responseDataParams = afffiliatePreRegister(userId,0,1,19,122,nextAffiliateRed)
         const responseDataParams = afffiliatePreRegister(userId,0,1,1,1)
+        console.log("responseDataParams",responseDataParams)
         const response = await affiliatesApi.create("affiliatePreregisterRed",{},responseDataParams,token)
         expect(response).not.toBeNull();
         expect(response.status).toBe(200);

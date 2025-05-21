@@ -5,18 +5,18 @@ import { generarId } from "../../core/utils/dependencies";
 
 export const afffiliatePreRegister = (sponsorId, position, list = 1, dpto = 1, mun = 1,nextUser = null, bar = null) => {
     const generateAffiliateData = (ciValue) => ({
+        ci: ciValue,
         name: fakerData.person.firstName(),
         middle_name: fakerData.person.middleName(),
         last_name: fakerData.person.lastName(),
         mother_last_name: fakerData.person.lastName(),
-        ci: ciValue,
-        sponsor_id: sponsorId,
-        prefix_phone: "591",
         phone: fakerData.phone.number('7#######'),
+        prefix_phone: "591",
         lista_id: list,
         dpto_id: dpto,
         mun_id: mun,
         barrio_id: bar,
+        sponsor_id: sponsorId,
         position,
     });
 

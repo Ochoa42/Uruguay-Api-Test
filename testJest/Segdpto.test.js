@@ -47,7 +47,7 @@ describe("Activity API Integration Tests", () => {
             const activityExists = activities.some(activity => activity.id === idActivity);
             expect(activityExists).toBe(true);
     
-            console.log(`✅ Afiliado ${userCi} recibió la actividad ${activitiName} correctamente.`);
+            console.log(`Afiliado ${userCi} recibió la actividad ${activitiName} correctamente.`);
         });
     
         await Promise.all(promises);
@@ -89,10 +89,10 @@ describe("Activity API Integration Tests", () => {
     
             if ( index < 4) {
                 expect(activityExists).toBe(true);
-                console.log(`✅ Afiliado ${userCi} (Permitido) recibió la actividad ${activitiName} correctamente.`);
+                console.log(`Afiliado ${userCi} (Permitido) recibió la actividad ${activitiName} correctamente.`);
             } else {
                 expect(activityExists).toBe(false);
-                console.log(`❌ Afiliado ${userCi} (No permitido) NO debe recibir la actividad ${activitiName}.`);
+                console.log(`Afiliado ${userCi} (No permitido) NO debe recibir la actividad ${activitiName}.`);
             }
         });
         await Promise.all(promises);
@@ -134,10 +134,10 @@ describe("Activity API Integration Tests", () => {
     
             if (index > 3 && index < 8) {
                 expect(activityExists).toBe(true);
-                console.log(`✅ Afiliado ${userCi} (Permitido) recibió la actividad ${activitiName} correctamente.`);
+                console.log(`Afiliado ${userCi} (Permitido) recibió la actividad ${activitiName} correctamente.`);
             } else {
                 expect(activityExists).toBe(false);
-                console.log(`❌ Afiliado ${userCi} (No permitido) NO debe recibir la actividad ${activitiName}.`);
+                console.log(`Afiliado ${userCi} (No permitido) NO debe recibir la actividad ${activitiName}.`);
             }
         });
         await Promise.all(promises);
